@@ -1,9 +1,33 @@
 digraph Tree {
 node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
 edge [fontname="helvetica"] ;
-0 [label=<HP &le; 79.5<br/>squared_error = 21896.873<br/>samples = 383<br/>value = 86.142>, fillcolor="#f6d3ba"] ;
-1 [label=<squared_error = 4902.181<br/>samples = 250<br/>value = 40.489>, fillcolor="#ffffff"] ;
+0 [label=<HP &le; 79.5<br/>squared_error = 21896.873<br/>samples = 383<br/>value = 86.142>, fillcolor="#fdf6f1"] ;
+1 [label=<Def &le; 174.0<br/>squared_error = 4902.181<br/>samples = 250<br/>value = 40.489>, fillcolor="#fefcfb"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label=<squared_error = 42560.433<br/>samples = 133<br/>value = 171.954>, fillcolor="#e58139"] ;
-0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+2 [label=<Def &le; 85.5<br/>squared_error = 2549.403<br/>samples = 247<br/>value = 36.445>, fillcolor="#fffdfc"] ;
+1 -> 2 ;
+3 [label=<squared_error = 785.22<br/>samples = 176<br/>value = 22.65>, fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label=<squared_error = 5281.593<br/>samples = 71<br/>value = 70.639>, fillcolor="#fef8f4"] ;
+2 -> 4 ;
+5 [label=<HP &le; 72.5<br/>squared_error = 86371.167<br/>samples = 3<br/>value = 373.5>, fillcolor="#f5cdb1"] ;
+1 -> 5 ;
+6 [label=<squared_error = 28815.062<br/>samples = 2<br/>value = 190.25>, fillcolor="#fae7da"] ;
+5 -> 6 ;
+7 [label=<squared_error = 0.0<br/>samples = 1<br/>value = 740.0>, fillcolor="#ea995f"] ;
+5 -> 7 ;
+8 [label=<Def &le; 137.5<br/>squared_error = 42560.433<br/>samples = 133<br/>value = 171.954>, fillcolor="#fbeade"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<Def &le; 92.5<br/>squared_error = 27540.486<br/>samples = 128<br/>value = 149.048>, fillcolor="#fbede3"] ;
+8 -> 9 ;
+10 [label=<squared_error = 8825.941<br/>samples = 77<br/>value = 94.008>, fillcolor="#fdf5ef"] ;
+9 -> 10 ;
+11 [label=<squared_error = 44316.164<br/>samples = 51<br/>value = 232.149>, fillcolor="#f9e1d0"] ;
+9 -> 11 ;
+12 [label=<Spe &le; 80.5<br/>squared_error = 69791.106<br/>samples = 5<br/>value = 758.34>, fillcolor="#e9965b"] ;
+8 -> 12 ;
+13 [label=<squared_error = 76756.703<br/>samples = 2<br/>value = 532.05>, fillcolor="#f0b78d"] ;
+12 -> 13 ;
+14 [label=<squared_error = 8250.527<br/>samples = 3<br/>value = 909.2>, fillcolor="#e58139"] ;
+12 -> 14 ;
 }
